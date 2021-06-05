@@ -1,0 +1,14 @@
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\Yacht_Dice_2.exe.config
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\Yacht_Dice_2.exe
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\Yacht_Dice_2.pdb
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\MetroFramework.Design.dll
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\MetroFramework.dll
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.csprojAssemblyReference.cache
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.Form1.resources
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.Properties.Resources.resources
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.csproj.GenerateResource.cache
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.csproj.CoreCompileInputs.cache
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.csproj.CopyComplete
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.exe
+C:\Users\김희권\source\repos\Yacht_Dice_2\Yacht_Dice_2\obj\Debug\Yacht_Dice_2.pdb
