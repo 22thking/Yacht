@@ -12,6 +12,15 @@ namespace Yacht_Dice_2
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm //상속 클래스 변경
     {
+        //일단 전송해야 하는 값은 form에서 real_dice.turn_dice, real_dice.turn_check_dice, Get_sumbutton_value(),
+        //private int categories_sum = 0;
+        //private int result_sum = 0; 이거까지 전송을 해야함 
+        //받는 거는 Counter_information에서 get으로 받으면 가능 
+        //Change_image(int[] counter_dice)이거로 다이스
+        //Counter_Change_dice_checked(bool[] counter_check_dice) 이놈은 홀드
+        //이놈은 나머지private void Counter_sum_change(int[] get,int bonus,int result) 동작할겨
+        //현재는 턴을 못 넘길거야 내일 자고 일어나서 함 맞추자 
+        Label[] opponent_sum = new Label[12];
         Random random = new Random();
         PictureBox[] Dice_images=new PictureBox[5];
         PictureBox[] hold_dice_image = new PictureBox[5];
@@ -21,10 +30,12 @@ namespace Yacht_Dice_2
         Dice_Work work_dice = new Dice_Work();
         Dice_Sum sum_dice = new Dice_Sum();
         Checked_Sum checked_sum = new Checked_Sum();
+        Counter_information counter_information = new Counter_information();
         private int categories_sum = 0;
         private int result_sum = 0;
         private int rolling_dice_num = 3;
         private int game_turn = 1;
+        private bool end_turn;
         private bool my_turn;
         private string[] dice_image =
         {
@@ -59,12 +70,26 @@ namespace Yacht_Dice_2
             if (my_turn)
             {
                 turn_t.Text = "<-";
+                end_turn = false;
             }else
             {
                 turn_t.Text = "->";
+                end_turn = true;
             }
             dice_rolling_num.Text = rolling_dice_num + "번";
             turn_num.Text = game_turn + " / 12";
+            opponent_sum[0] = opponent_sum1;
+            opponent_sum[1] = opponent_sum2;
+            opponent_sum[2] = opponent_sum3;
+            opponent_sum[3] = opponent_sum4;
+            opponent_sum[4] = opponent_sum5;
+            opponent_sum[5] = opponent_sum6;
+            opponent_sum[6] = opponent_sum7;
+            opponent_sum[7] = opponent_sum8;
+            opponent_sum[8] = opponent_sum9;
+            opponent_sum[9] = opponent_sum10;
+            opponent_sum[10] = opponent_sum11;
+            opponent_sum[11] = opponent_sum12;
             Dice_images[0] = Dice1;
             Dice_images[1] = Dice2;
             Dice_images[2] = Dice3;
@@ -105,7 +130,7 @@ namespace Yacht_Dice_2
             work_dice.turn_check_dice = real_dice.turn_check_dice;
             work_dice.Rolling_dice();
             real_dice.turn_dice = work_dice.turn_dice;
-            Change_image();
+            Change_image(counter_information.getset_dice);
             Change_sum_text();
         }
         private int[] Get_sumbutton_value()
@@ -117,16 +142,26 @@ namespace Yacht_Dice_2
             }
             return get;
         }
-        private void Change_image()
+        private void Change_image(int[] counter_dice)
         {
-            for (int i = 0; i < 5; i++)
+            if (my_turn)
             {
-                if (!real_dice.Return_dice_checked(i))
-                    continue;
-                int value = real_dice.Return_dice_value(i);             
-                Dice_images[i].Load(dice_image[value]);
-                Dice_images[i].SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+                for (int i = 0; i < 5; i++)
+                {
+                    if (!real_dice.Return_dice_checked(i))
+                        continue;
+                    int value = real_dice.Return_dice_value(i);
+                    Dice_images[i].Load(dice_image[value]);
+                    Dice_images[i].SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+            }else
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Dice_images[i].Load(dice_image[counter_dice[i]]);
+                    Dice_images[i].SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+            }  
         }
         private void Change_hold_dice_image(bool get,int index)
         {
@@ -152,6 +187,25 @@ namespace Yacht_Dice_2
             {
                 Dice_images[index].Image = null;
             }
+        }
+        private void Counter_Change_dice_checked(bool[] counter_check_dice) //이놈은 hold버튼 누를 때 마다 호출
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Change_hold_dice_image(counter_check_dice[i], i);
+                Change_dice_image(counter_check_dice[i], i);
+            }
+        }
+        private void Counter_sum_change(int[] get,int bonus,int result)//이놈은 점수 체크했을 시 오름
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                opponent_sum[i].Text = get[i].ToString();
+            }
+            Counter_bonus_score.Text = bonus.ToString();
+            if (Counter_bonus_label.BackColor != Color.Aqua && bonus >= 65)
+                Counter_bonus_label.BackColor = Color.Aqua;
+            Counter_result_score.Text = result.ToString();
         }
         private void Change_sum_text()
         {            
@@ -204,6 +258,7 @@ namespace Yacht_Dice_2
             Change_dice_image(get, index);
             Change_hold(index);
         }
+        
         private void sum_change_text()
         {
             rolling_dice_num = 3;

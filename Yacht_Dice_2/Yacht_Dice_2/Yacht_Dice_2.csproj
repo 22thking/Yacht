@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Checked_Sum.cs" />
-    <Compile Include="Counter_play.cs" />
+    <Compile Include="Counter_information.cs" />
     <Compile Include="Dice.cs" />
     <Compile Include="Dice_Sum.cs" />
     <Compile Include="Dice_Work.cs" />

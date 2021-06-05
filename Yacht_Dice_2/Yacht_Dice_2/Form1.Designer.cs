@@ -81,7 +81,7 @@ namespace Yacht_Dice_2
             this.hold_dice4 = new System.Windows.Forms.PictureBox();
             this.hold_dice5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Counter_bonus_score = new System.Windows.Forms.Label();
             this.htmlLabel7 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel15 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel16 = new MetroFramework.Drawing.Html.HtmlLabel();
@@ -89,7 +89,7 @@ namespace Yacht_Dice_2
             this.htmlLabel18 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel19 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.htmlLabel20 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.Counter_bonus_label = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel21 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel22 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel23 = new MetroFramework.Drawing.Html.HtmlLabel();
@@ -111,7 +111,7 @@ namespace Yacht_Dice_2
             this.opponent_sum2 = new System.Windows.Forms.Label();
             this.opponent_sum1 = new System.Windows.Forms.Label();
             this.opponent_sum12 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Counter_result_score = new System.Windows.Forms.Label();
             this.turn_t = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Dice3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dice2)).BeginInit();
@@ -735,17 +735,17 @@ namespace Yacht_Dice_2
             this.label1.TabIndex = 83;
             this.label1.Text = "/63";
             // 
-            // label3
+            // Counter_bonus_score
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gainsboro;
-            this.label3.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1362, 428);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 22);
-            this.label3.TabIndex = 82;
-            this.label3.Text = "0";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Counter_bonus_score.AutoSize = true;
+            this.Counter_bonus_score.BackColor = System.Drawing.Color.Gainsboro;
+            this.Counter_bonus_score.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Counter_bonus_score.Location = new System.Drawing.Point(1362, 428);
+            this.Counter_bonus_score.Name = "Counter_bonus_score";
+            this.Counter_bonus_score.Size = new System.Drawing.Size(23, 22);
+            this.Counter_bonus_score.TabIndex = 82;
+            this.Counter_bonus_score.Text = "0";
+            this.Counter_bonus_score.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // htmlLabel7
             // 
@@ -834,18 +834,18 @@ namespace Yacht_Dice_2
             this.pictureBox5.TabIndex = 81;
             this.pictureBox5.TabStop = false;
             // 
-            // htmlLabel20
+            // Counter_bonus_label
             // 
-            this.htmlLabel20.AutoScroll = true;
-            this.htmlLabel20.AutoScrollMinSize = new System.Drawing.Size(53, 38);
-            this.htmlLabel20.AutoSize = false;
-            this.htmlLabel20.BackColor = System.Drawing.Color.White;
-            this.htmlLabel20.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.htmlLabel20.Location = new System.Drawing.Point(1216, 428);
-            this.htmlLabel20.Name = "htmlLabel20";
-            this.htmlLabel20.Size = new System.Drawing.Size(112, 40);
-            this.htmlLabel20.TabIndex = 59;
-            this.htmlLabel20.Text = "bonus";
+            this.Counter_bonus_label.AutoScroll = true;
+            this.Counter_bonus_label.AutoScrollMinSize = new System.Drawing.Size(53, 38);
+            this.Counter_bonus_label.AutoSize = false;
+            this.Counter_bonus_label.BackColor = System.Drawing.Color.White;
+            this.Counter_bonus_label.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Counter_bonus_label.Location = new System.Drawing.Point(1216, 428);
+            this.Counter_bonus_label.Name = "Counter_bonus_label";
+            this.Counter_bonus_label.Size = new System.Drawing.Size(112, 40);
+            this.Counter_bonus_label.TabIndex = 59;
+            this.Counter_bonus_label.Text = "bonus";
             // 
             // htmlLabel21
             // 
@@ -1097,15 +1097,15 @@ namespace Yacht_Dice_2
             this.opponent_sum12.Text = "0";
             this.opponent_sum12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // Counter_result_score
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("궁서체", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(1209, 818);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 40);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "점수:";
+            this.Counter_result_score.AutoSize = true;
+            this.Counter_result_score.Font = new System.Drawing.Font("궁서체", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Counter_result_score.Location = new System.Drawing.Point(1209, 818);
+            this.Counter_result_score.Name = "Counter_result_score";
+            this.Counter_result_score.Size = new System.Drawing.Size(120, 40);
+            this.Counter_result_score.TabIndex = 97;
+            this.Counter_result_score.Text = "점수:";
             // 
             // turn_t
             // 
@@ -1113,7 +1113,7 @@ namespace Yacht_Dice_2
             this.turn_t.Font = new System.Drawing.Font("궁서", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.turn_t.Location = new System.Drawing.Point(746, 42);
             this.turn_t.Name = "turn_t";
-            this.turn_t.Size = new System.Drawing.Size(69, 34);
+            this.turn_t.Size = new System.Drawing.Size(67, 33);
             this.turn_t.TabIndex = 98;
             this.turn_t.Text = "<-";
             // 
@@ -1123,7 +1123,7 @@ namespace Yacht_Dice_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1820, 1080);
             this.Controls.Add(this.turn_t);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Counter_result_score);
             this.Controls.Add(this.opponent_sum12);
             this.Controls.Add(this.opponent_sum1);
             this.Controls.Add(this.opponent_sum2);
@@ -1138,7 +1138,7 @@ namespace Yacht_Dice_2
             this.Controls.Add(this.opponent_sum11);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Counter_bonus_score);
             this.Controls.Add(this.htmlLabel7);
             this.Controls.Add(this.htmlLabel15);
             this.Controls.Add(this.htmlLabel16);
@@ -1146,7 +1146,7 @@ namespace Yacht_Dice_2
             this.Controls.Add(this.htmlLabel18);
             this.Controls.Add(this.htmlLabel19);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.htmlLabel20);
+            this.Controls.Add(this.Counter_bonus_label);
             this.Controls.Add(this.htmlLabel21);
             this.Controls.Add(this.htmlLabel22);
             this.Controls.Add(this.htmlLabel23);
@@ -1285,7 +1285,7 @@ namespace Yacht_Dice_2
         private System.Windows.Forms.PictureBox hold_dice4;
         private System.Windows.Forms.PictureBox hold_dice5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Counter_bonus_score;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel7;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel15;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel16;
@@ -1293,7 +1293,7 @@ namespace Yacht_Dice_2
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel18;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel19;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel20;
+        private MetroFramework.Drawing.Html.HtmlLabel Counter_bonus_label;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel21;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel22;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel23;
@@ -1315,7 +1315,7 @@ namespace Yacht_Dice_2
         private System.Windows.Forms.Label opponent_sum2;
         private System.Windows.Forms.Label opponent_sum1;
         private System.Windows.Forms.Label opponent_sum12;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Counter_result_score;
         private System.Windows.Forms.Label turn_t;
     }
 }
