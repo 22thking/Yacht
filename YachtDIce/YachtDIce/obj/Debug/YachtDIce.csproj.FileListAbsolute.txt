@@ -1,0 +1,13 @@
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\bin\Debug\YachtDIce.exe.config
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\bin\Debug\YachtDIce.exe
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\bin\Debug\YachtDIce.pdb
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.csprojAssemblyReference.cache
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.Counterform.resources
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.Diceplay.resources
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.Form1.resources
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.Myscore.resources
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.Properties.Resources.resources
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.csproj.GenerateResource.cache
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.csproj.CoreCompileInputs.cache
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.exe
+C:\Users\김희권\source\repos\YachtDIce\YachtDIce\obj\Debug\YachtDIce.pdb
